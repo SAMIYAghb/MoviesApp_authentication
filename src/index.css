@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --bg-color: #131722;
+  --main-font: 'Montserrat Alternates', sans-serif;
+  --light-bg: #24baef;
+  --font-color: #fff;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: var(--main-font);
+  color: var(--font-color);
+}
+a{
+  text-decoration: none;
+  color: var(--font-color);
+}
+.nav{
+  background-color: var(--bg-color);
+}
+.nav-link{
+  color: var(--font-color); 
+}
+.navbar-brand{
+  color: var(--font-color); 
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.my-input{
+  background-color: transparent;
+  border: 1px solid #a8a8a83d;
+  color: #fff;
+}
+.brdr{
+  height: 1px;
+  background-color: #a8a8a83d;
+}
+.vote{
+  background-color: var(--light-bg);
+}
+.offline{
+  background-color: #2b2e37;;
+  box-shadow: 10px 10px 10px #ccc;
+  padding: 20px;
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  z-index: 999;
 }
